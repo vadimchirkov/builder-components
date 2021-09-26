@@ -1,0 +1,31 @@
+{
+  "name": "builder-components",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@builder.io/react": "^1.1.46",
+    "@craco/craco": "^6.3.0",
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.4",
+    "@types/react": "^17.0.24",
+    "headlessui": "0.0.0",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-syntax-highlighter": "^15.4.4",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.15"
+  }
+}
