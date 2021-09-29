@@ -3,11 +3,13 @@ import { useRouter } from 'next/router'
 import { BuilderComponent, Builder, builder } from '@builder.io/react'
 import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
-import "../components/heading";
-import "../components/CodeBlockComponent";
-import "../components/marketing/elements/headers/simple_links_centered.jsx";
+import "../components/features"
+import "../components/header"
+import "../components/hero"
+import "../components/incentives"
+import "../components/products"
 
-const BUILDER_API_KEY = '4f7f11ee6e754d33b9be50b459b52980'
+const BUILDER_API_KEY = 'b1f8c11006604e4a9ddf2975c3f19881'
 builder.init(BUILDER_API_KEY)
 
 // tells you what paths are being built
@@ -43,7 +45,7 @@ export async function getStaticPaths() {
 
   return {
     paths: pages.map((page) => `${page.data?.url}`),
-    fallback: true,
+    fallback: false,
   }
 }
 
